@@ -1,0 +1,29 @@
+{
+    "subprojects" : [
+        {
+            "description" : "Poem reader app for Android.",
+            "features" : [
+                {
+                    "name" : "LaTeX source files directly to app",
+                    "icon" : "/img/logos/LaTeX_logo.svg",
+                    "description" : "Converts a small subset of LaTeX tags, commonly used in poems, to render it on app. Write it, move it to app assets folder and Whoomp! There it is!"
+                },
+                {
+                    "name" : "Text-To-Sppech",
+                    "icon" : "/img/icons/google_tts.png",
+                    "description" : "Listen poems with Android Text-To-Speech engine."
+                }
+            ],
+            "screenshots" : [
+                {
+                    "image_file": "carmen1.jpeg",
+                    "caption": "List of available (LaTeX) poems packaged with app."
+                },
+                {
+                    "image_file": "carmen2.jpeg",
+                    "caption": "A poem, with the \"Read poem\" button ready to be pressed on ActionBar."
+                }
+            ]
+        }
+    ]
+}

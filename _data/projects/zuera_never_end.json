@@ -1,0 +1,109 @@
+{
+    "subprojects" : [
+        {
+            "id" : "zne_native",
+            "name" : "Native Android App",
+            "description" : "Pluggable soundboard app.",
+            "features" : [
+                {
+                    "name" : "Sound Packs",
+                    "icon" : "/img/icons/APK_format.png",
+                    "description" : "Install only what you want."
+                },
+                {
+                    "name" : "Bookmarkable sounds",
+                    "icon" : "/img/icons/book-bookmark.svg",
+                    "description" : "Easily find your most needed sounds in a bookmark panel."
+                },
+                {
+                    "name" : "Fast to start, faster to repeat",
+                    "icon" : "/img/icons/dashboard-alt.svg",
+                    "description" : "Sounds are loaded on demand to buffer."
+                },
+                {
+                    "name" : "Text-To-Speech",
+                    "icon" : "/img/icons/google_tts.png",
+                    "description" : "Use your own lines."
+                }
+            ],
+            "features_planned" : [
+                {
+                    "name" : "Chorus/Echo play with Bluetooth",
+                    "icon" : "/img/icons/bluetooth.png",
+                    "description" : "Join a channel with your buddies and spread the anarchical buzz."
+                },
+            ],
+            "screenshots" : [
+                {
+                    "image_file": "zne1.jpeg",
+                    "caption": "Main menu listing all sounds pages available (installed by soundpacks)."
+                },
+                {
+                    "image_file": "zne2.jpeg",
+                    "caption": "A sound page with sound buttons ready to be <del>spammed</del> <ins>touched</ins>."
+                },
+                {
+                    "image_file": "zne3.jpeg",
+                    "caption": "Prompt to bookmark a sound button. Use any alias you want."
+                },
+                {
+                    "image_file": "zne4.jpeg",
+                    "caption": "Text-to-speech sound page."
+                },
+                {
+                    "image_file": "zne5.jpeg",
+                    "caption": "Pop-up to create a new sentence to TTS. You can preview it too."
+                }
+            ]
+        },
+        {
+            "id" : "zne_webapp",
+            "name" : "Web App",
+            "description" : "Ported from Android App.",
+            "features" : [
+                {
+                    "name" : "Powered by Apache Cordova",
+                    "icon" : "/img/logos/apache_cordova.png",
+                    "description" : "Laying the foundation to an hybrid app in a near future."
+                },
+                {
+                    "name" : "Chorus/Echo play, powered by Tornado Web Server",
+                    "icon" : "/img/logos/tornado-web-server.png",
+                    "description" : "Join a channel with your buddies and spread the anarchical buzz."
+                },
+                {
+                    "name" : "Fast to start, faster to repeat",
+                    "icon" : "/img/icons/dashboard-alt.svg",
+                    "description" : "Sounds are loaded on demand to buffer."
+                }
+            ],
+            "features_testing" : [
+                {
+                    "name" : "Text-To-Speech",
+                    "icon" : "/img/icons/google_tts.png",
+                    "description" : "Provided by Google Chrome Browser."
+                }
+            ],
+            "features_planned" : [
+            ],
+            "screenshots" : [
+                {
+                    "image_file": "webzne-startscreen.jpeg",
+                    "caption": "Initial screen of webapp."
+                },
+                {
+                    "image_file": "webzne-soundpanel.jpeg",
+                    "caption": "Sound panel."
+                },
+                {
+                    "image_file": "webzne-ttsscreen.jpeg",
+                    "caption": "Text-to-speech."
+                },
+                {
+                    "image_file": "webzne-chorus.jpeg",
+                    "caption": "Chorus configuration screen."
+                }
+            ]
+        }
+    ]
+}

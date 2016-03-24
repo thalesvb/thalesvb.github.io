@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head_common.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    {% include nav.html %}
+    <main>
+    <div class="container">
+    {{content}}
+    {% assign posts=site.posts | where:"lang", page.lang %}
+    {% if posts != empty %}
+    {% for post in posts %}
+            <h1><a href="{{ post.url }}" hreflang="{{ post.lang }}" class="{{ post.lang }}">{{ post.title }}</a></h1>
+            <p class="author">
+                <span class="date">{{ post.date | date_to_long_string }}</span>
+            </p>
+            <div class="content">
+            {{ post.excerpt }}
+            </div>
+    {% endfor %}
+    {% else %}
+        {{ site.data.i18n[page.lang].no_posts_available }}
+    {% endif %}
+    </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+    "subprojects" : [
+        {
+            "description" : "A graphical interface to view generated SAPLink file's contents.",
+            "features" : [
+                {
+                    "name" : "UI based on SAPGui",
+                    "icon" : "/img/logos/sapgui.ico.png",
+                    "description" : "Faster learning curve for those who already work with ABAP."
+                },
+                {
+                    "name" : "Multiplatform",
+                    "icon" : "/img/logos/WxPython.png",
+                    "description" : "Built with Python and wxWidgets, binaries offered for Linux and Windows."
+                }
+            ],
+            "features_planned" : [
+                {
+                    "name" : "Textual / Graphical diff",
+                    "icon" : "/img/icons/diff.svg",
+                    "description" : "Compare versions."
+                },
+                {
+                    "name" : "Mobile app",
+                    "icon" : "/img/icons/smartphone_hand.svg",
+                    "description" : "Have your code anytime, anywhere. Don't worry about proxies / restriction policies on client, be happy."
+                }
+            ],
+            "screenshots" : [
+                {
+                    "image_file": "method_list.png",
+                    "caption": "Running on Windows with ZSAPLink class methods list open."
+                },
+                {
+                    "image_file": "method_source.png",
+                    "caption": "Method soruce code screen."
+                },
+                {
+                    "image_file": "report_source.png",
+                    "caption": "Report source screen."
+                }
+            ]
+        }
+    ]
+}

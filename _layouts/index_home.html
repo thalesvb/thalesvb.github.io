@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head_common.html %}
+  </head>
+  <body>
+  <div id="home">
+    {% include header.html %}
+    {% include nav.html %}
+    <main>
+    <div class="container homepage">
+    {{content}}
+    </div>
+    </main>
+    <div id="background">
+    </div>
+    {% comment %}
+    {% include footer.html %}
+    {% endcomment %}
+    </div>
+    <script src="index_res/three.min.js"></script>
+    <script src="index_res/world.js"></script>
+    <script src="index_res/sprite.js"></script>
+    <script src="index_res/scene.js"></script>
+  </body>
+</html>

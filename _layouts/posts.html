@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% assign subtitle = page.date | date_to_long_string %}
+<html>
+  <head>
+    {% include head_common.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    {% include nav.html %}
+    <main>
+    <div class="container text-justify">
+    {{content}}
+    </div>
+    </main>
+    <footer>
+    <div class="container">
+    <p><label class="sr-only" for="date">Date</label><span id="date" title="Date" class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{ page.date | date_to_long_string }}</p>
+    
+    <p><label class="sr-only" for="categories">Categories</label><span id="categories" title="Categories" class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+    {% for category in page.categories%}
+      {{category}}
+    {% endfor %}
+    </p>
+    
+    <p><label class="sr-only" for="tags">Tags</label><span id="tags" title="Tags" class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+    {% for tag in page.tags %}
+      {{tag}}
+    {% endfor %}
+    </p>
+    </div>
+    </footer>
+    {% include footer.html %}
+  </body>
+</html>

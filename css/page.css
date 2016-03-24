@@ -1,0 +1,129 @@
+body {
+    padding-top: 50px;
+}
+header {
+    text-align: center;
+}
+
+nav {
+    
+}
+
+main > h1 {
+    
+}
+
+footer {
+    
+}
+.center {
+    text-align: center;
+}
+
+/* Blog CSS, should be spllited later to a separated file. */
+.langActive {
+    font-weight: bold;
+}
+.lang-icon {
+    width: 5em;
+    height: 5em;
+}
+
+/* Projects CSS, should be splitted later to a separated file. */
+.subproject {
+    text-align: center;
+}
+.subproject .name {
+    background : linear-gradient( to right, transparent, black calc(50% - 10em), black calc(50% + 10em), transparent 100% );
+    color: white;
+    font-weight: bold;
+}
+.subproject .mainTopic {
+    background : linear-gradient( to right, transparent, grey calc(50% - 10em), grey calc(50% + 10em), transparent 100% );
+    color: white;
+    font-weight: bold;
+}
+.project-icon {
+    width: 10em;
+    height: 10em;
+}
+.iconFeature {
+    background: lime;
+}
+.iconFeatureTesting {
+    background: yellow;
+}
+.iconFeaturePlanned {
+    background : turquoise;
+}
+
+/* Index page CSS */
+#home {
+    height: calc(100% - 50px);
+    width: 100%;
+    position:absolute;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    color: #9d9d9d;
+}
+#background {
+    position: absolute;
+    margin: 0;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #222222;
+}
+
+/* 404 page CSS */
+.chat-icon {
+    width: 5em;
+    height: 5em;
+}
+.libyans {
+    max-height: 15em;
+    max-width: 100%;
+}
+/* From bootstrap, but modified */
+.item {
+    width: calc(100% - 10em);
+    margin: auto;
+}
+.item > img {
+    margin: auto;
+    max-width: 75vw;
+    max-height: 75vh;
+}
+.carousel-caption {
+    background-color : rgba(0,0,0,0.7);
+    border-radius : 2em;
+}
+
+/* From bootstrap */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+/* Bootstrap hacks */
+/* http://stackoverflow.com/questions/29984416/bootstrap-css-navbar-inverse-dropdown-how-to-change-color-of-checkbox-label-text */
+@media (min-width: 768px) {
+    .navbar-inverse .dropdown-menu {
+        background-color: #222;
+    }
+    .dropdown-menu>li>a {
+        color: #9d9d9d;
+    }
+    .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+        background-color: #080808;
+    }
+}

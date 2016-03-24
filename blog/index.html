@@ -1,0 +1,70 @@
+---
+layout: default
+title: Blog
+---
+
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}" hreflang="{{ post.lang }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+  </p>
+  <div class="content">
+    {{ post.excerpt }}
+  </div>
+{% endfor %}
+
+
+<div class="container center">
+<div class="row">
+<div class="col-md-12">
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  <ul class="pagination">
+      <li {% if paginator.previous_page == null%} class="disabled" {%endif%}>{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">{% endif %}
+        <span aria-hidden="true">&laquo; Prev</span>
+      {% if paginator.previous_page%}</a>{% endif %}
+      </li>
+    
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="active"><a href="#">{{page}}<span class="sr-only">(current)</span></a></li>
+      {% elsif page == 1 %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: 'page/:num', ''}}">{{ page }}</a></li>
+      {% else %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{page}}</a></li>
+      {% endif %}
+    {% endfor %}
+    
+    <li {% if paginator.next_page == null%} class="disabled" {%endif%}>{% if paginator.next_page %}<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">{% endif %}
+        <span aria-hidden="true">Next &raquo;</span>
+      {% if paginator.next_page%}</a>{% endif %}
+      </li>
+    
+  </ul>
+</nav>
+{% endif %}
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<h2>Indexes</h2>
+</div>
+<div class="col-md-2 col-md-offset-4">
+<a href="/blog/categories/">Categories</a>
+</div>
+<div class="col-md-2">
+<a href="/blog/tags/">Tags</a>
+</div>
+<div class="col-md-12">
+<h3>By language</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-md-2 col-md-offset-4">
+<a href="/blog/pt-br/"><img class="img-circle lang-icon" src="{{site.prefix_cdn}}/img/flags/1x1/br.svg" alt="Brazilian portuguese"></img></a>
+</div>
+<div class="col-md-2">
+<a href="/blog/en/"><img class="img-circle lang-icon" src="{{site.prefix_cdn}}/img/flags/1x1/us.svg" alt="English (USA)"></img></a>
+</div>
+</div>
+</div>

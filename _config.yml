@@ -1,0 +1,43 @@
+# https://www.sylvaindurand.org/making-jekyll-multilingual/
+
+exclude: ['jekyll']
+
+permalink: "/blog/:year/:month/:day/:title.html"
+paginate: 2
+paginate_path: "/blog/page/:num"
+
+img_dir: "/img"
+prefix_cdn : "//github.com/thalesvb/thalesvb.github.io/wiki"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      img_dir: "//github.com/thalesvb/thalesvb.github.io/wiki/blog/resources/img/"
+      layout: "posts"
+  -
+    scope:
+      path: "_posts/en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "_posts/pt-BR"
+    values:
+      lang: "pt-br"
+
+  -
+    scope:
+      path: "projects"
+      type: "projects"
+    values:
+      layout: "project"
+
+collections:
+  abouts:
+    output: true
+    permalink: "/about/:name/"
+  projects:
+    output: true
+    permalink: "/:collection/:name/"
