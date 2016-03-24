@@ -1,5 +1,6 @@
 ---
 universal_name: abap_user_profile_param_bspwd_user_level
+lang: pt-br
 title: Configuração de perfil para identificar facilmente mensagens lançadas no CRM WebUI
 categories: ABAP
 tags: WebUI
