@@ -37,4 +37,4 @@ Esta configuração também possibilita que sejam lançadas, para um mesmo event
 Um exemplo é uma execução que depende de dados customizing, e tais dados não foram configurados. Para o usuário final pode-se lançar a mensagem "Não foi possível realizar a execução" e para o funcional mostrar adicionalmente o alerta "A tabela customizing Z(...) não está preenchida".
 Todos ficam felizes, especialmente o ABAPer que não terá que parar o desenvolvimento e fazer um debug para ter de gerar provas de sua inocência em um crime que ele não cometeu.
 
-O documento [Message handling in SAP CRM Web UI (SAP Community Network)](http://www.sdn.sap.com/irj/scn/go/portal/prtroot/docs/library/uuid/f08a833a-f5c0-2e10-bf94-d464bf5355dc?QuickLink=index&overridelayout=true&52239688229082) explica um pouco deste parâmetro.
+O documento [Message handling in SAP CRM Web UI (SAP Community Network)](http://www.sdn.sap.com/irj/scn/go/portal/prtroot/docs/library/uuid/f08a833a-f5c0-2e10-bf94-d464bf5355dc?QuickLink=index&overridelayout=true&52239688229082){:target="_blank"} explica um pouco deste parâmetro.
