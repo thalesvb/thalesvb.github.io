@@ -17,12 +17,12 @@
             "features_planned" : [
                 {
                     "name" : "Textual / Graphical diff",
-                    "icon" : "/img/icons/diff.svg",
+                    "icon" : "/img/icons/diff.png",
                     "description" : "Compare versions."
                 },
                 {
                     "name" : "Mobile app",
-                    "icon" : "/img/icons/smartphone_hand.svg",
+                    "icon" : "/img/icons/smartphone_hand.png",
                     "description" : "Have your code anytime, anywhere. Don't worry about proxies / restriction policies on client, be happy."
                 }
             ],

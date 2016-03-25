@@ -5,7 +5,7 @@
             "features" : [
                 {
                     "name" : "LaTeX source files directly to app",
-                    "icon" : "/img/logos/LaTeX_logo.svg",
+                    "icon" : "/img/logos/LaTeX_logo.png",
                     "description" : "Converts a small subset of LaTeX tags, commonly used in poems, to render it on app. Write it, move it to app assets folder and Whoomp! There it is!"
                 },
                 {

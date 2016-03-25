@@ -12,12 +12,12 @@
                 },
                 {
                     "name" : "Bookmarkable sounds",
-                    "icon" : "/img/icons/book-bookmark.svg",
+                    "icon" : "/img/icons/book-bookmark.png",
                     "description" : "Easily find your most needed sounds in a bookmark panel."
                 },
                 {
                     "name" : "Fast to start, faster to repeat",
-                    "icon" : "/img/icons/dashboard-alt.svg",
+                    "icon" : "/img/icons/dashboard-alt.png",
                     "description" : "Sounds are loaded on demand to buffer."
                 },
                 {
@@ -73,7 +73,7 @@
                 },
                 {
                     "name" : "Fast to start, faster to repeat",
-                    "icon" : "/img/icons/dashboard-alt.svg",
+                    "icon" : "/img/icons/dashboard-alt.png",
                     "description" : "Sounds are loaded on demand to buffer."
                 }
             ],
