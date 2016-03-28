@@ -8,5 +8,6 @@
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
 <title>{% if page.url != '/index.html' %}{{ page.title }} | {% endif %}ThalesVB</title>
-
+{% if jekyll.environment == "production" %}
 {% include analytics.html %}
+{% endif %}
