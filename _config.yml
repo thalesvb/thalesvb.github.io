@@ -8,13 +8,13 @@ paginate_path: "/blog/page/:num"
 
 img_dir: "/img"
 prefix_cdn : "//github.com/thalesvb/thalesvb.github.io/wiki"
+dir_blog_resources: "/blog/resources/"
 
 defaults:
   -
     scope:
       path: ""
     values:
-      img_dir: "//github.com/thalesvb/thalesvb.github.io/wiki/blog/resources/img/"
       layout: "posts"
   -
     scope:

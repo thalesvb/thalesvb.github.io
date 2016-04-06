@@ -25,7 +25,7 @@ Todo este trabalho para identificar em qual mensagem deve ser colocado um ponto 
 
 Existe uma configuração de perfil de usuário que facilita a identificação de qual classe e número de mensagem foi utilizado para gerar as mensagens mostradas na parte superior da tela, além dos parâmetros utilizados na mensagem, como mostrado na imagem abaixo:
 
-![Exemplo do parâmetro BSPWD_USER_LEVEL em funcionamento, mostrando, ao manter o mouse sobre a mensagem, os detalhes da classe de mensagem, número e valores 1 a 4 que foram usados para gerar a mensagem em tela.]({{page.img_dir}}abap_webui_bspwd_user_level_example.jpg)
+{% include post_image.md image="abap_webui_bspwd_user_level_example.jpg" description="Exemplo do parâmetro BSPWD_USER_LEVEL em funcionamento, mostrando, ao manter o mouse sobre a mensagem, os detalhes da classe de mensagem, número e valores 1 a 4 que foram usados para gerar a mensagem em tela." %}
 
 Isto pode ser ativado da tela inicial do SAPLogon, acessando o menu ‘Sistema / Especificações do
 usuário / Dados próprios’, e então incluir em seu perfil o parâmetro <strong>BSPWD_USER_LEVEL</strong> com valor
