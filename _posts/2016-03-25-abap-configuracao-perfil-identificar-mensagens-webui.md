@@ -17,8 +17,8 @@ A interface para lançar mensagens do WebUI, através do método <strong>ADD_MES
 IF 1 EQ 0. MESSAGE e000(R1). ENDIF.
 ```
 
-A mensagem pode também ter sido lançada em um ponto obscuro dentro da solução standard quem nem a própria SAP pode lembrar que existe
-Há o trabalho também de procurar na tabela T100 pela a mensagem para então saber qual seu número e a classe de mensagem que ela pertence, e algum tempo pode ser gasto nisso quando há os placeholders e é necessário uma combinação aleatória de asterisco para achar a entrada na tabela.
+A mensagem pode também ter sido lançada em um ponto obscuro dentro da solução standard que nem a própria SAP pode lembrar que existe.
+Há o trabalho, também, de procurá-la na tabela T100 para, então, saber qual seu número e a classe de mensagem que ela pertence, e algum tempo pode ser gasto nisso quando há os placeholders (caractere *&*) e é necessário realizar uma combinação semi-aleatória de asteriscos para achar a entrada na tabela.
 Todo este trabalho para identificar em qual mensagem deve ser colocado um ponto de parada e então começar a entender o cenário do erro.
 
 > "Feliz o desenvolvedor que consegue rapidamente descobrir o erro que o usuário reporta."
