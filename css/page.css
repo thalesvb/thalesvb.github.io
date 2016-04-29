@@ -28,6 +28,10 @@ footer {
     width: 5em;
     height: 5em;
 }
+.img-centered {
+    display: block;
+    margin: auto;
+}
 
 /* Projects CSS, should be splitted later to a separated file. */
 .subproject {
