@@ -1,6 +1,7 @@
 # https://www.sylvaindurand.org/making-jekyll-multilingual/
 
-exclude: ['jekyll']
+exclude: ['jekyll',
+          vendor] # speed up Travis
 
 gems: [jekyll-paginate]
 
