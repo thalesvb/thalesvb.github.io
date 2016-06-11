@@ -1,0 +1,7 @@
+{% capture bkgpath %}/posts_bkg/{{page.categories.first}}/index.html{% endcapture %}
+{% for static_file in site.static_files %}
+  {% if static_file.path == bkgpath %}
+<iframe id="bkg_iframe" src="{{bkgpath}}"></iframe>
+    {% break %}
+  {% endif %}
+{% endfor %}

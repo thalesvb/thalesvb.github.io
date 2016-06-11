@@ -1,0 +1,36 @@
+#unclickable {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.abap_st22 {
+    font-family: monospace;
+    width: 100%;
+}
+.abap_st22 > thead > tr> th {
+    text-align: left;
+}
+
+.abap_st22.header {
+    border-collapse: separate;
+    border-spacing: 0px 2px;
+}
+.abap_st22.header > tbody {
+    background-color: LightCoral;
+}
+
+.abap_st22.info {
+    border: 1px solid black;
+    margin: 2em 0em;
+}
+.abap_st22.info > thead {
+    background-color: LightSkyBlue;
+}
+.abap_st22.info > tbody {
+    background-color: white;
+}
+.abap_st22.info > tbody > tr > td {
+    padding: 0em 2em;
+}
