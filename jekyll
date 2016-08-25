@@ -1,6 +1,6 @@
 #!/bin/sh
 # https://hub.docker.com/r/grahamc/jekyll/
 
-sudo docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll $@
+docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll $@
 #sudo docker run --rm -v "$PWD:/src" -p 4000:4000 thalesvb/ghpages:latest $@
 

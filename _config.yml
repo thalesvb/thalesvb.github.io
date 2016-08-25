@@ -34,7 +34,6 @@ defaults:
       path: "_posts/pt-BR"
     values:
       lang: "pt-br"
-
   -
     scope:
       path: "projects"
