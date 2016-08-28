@@ -18,10 +18,19 @@ dir_blog_resources: "/blog/resources/"
 gist:
   noscript: false # don't render noscript fallback tags with gist code
 
+collections:
+  abouts:
+    output: true
+    permalink: "/about/:name/"
+  projects:
+    output: true
+    permalink: "/:collection/:name/"
+
 defaults:
   -
     scope:
       path: ""
+      type: "posts"
     values:
       layout: "posts"
   -
@@ -36,15 +45,13 @@ defaults:
       lang: "pt-br"
   -
     scope:
-      path: "projects"
+      path: "_projects"
       type: "projects"
     values:
       layout: "project"
-
-collections:
-  abouts:
-    output: true
-    permalink: "/about/:name/"
-  projects:
-    output: true
-    permalink: "/:collection/:name/"
+  -
+    scope:
+      path: "_abouts"
+      type: "abouts"
+    values:
+      layout: "default"
