@@ -1,5 +1,5 @@
 body {
-    padding-top: 50px;
+    
 }
 header {
     text-align: center;
@@ -18,6 +18,11 @@ footer {
 }
 .center {
     text-align: center;
+}
+.sideview-background {
+    background-color:#212121;
+    width:100%;
+    height:100%;
 }
 
 /* Blog CSS, should be spllited later to a separated file. */
@@ -38,13 +43,9 @@ footer {
     text-align: center;
 }
 .subproject .name {
-    background : linear-gradient( to right, transparent, black calc(50% - 10em), black calc(50% + 10em), transparent 100% );
-    color: white;
     font-weight: bold;
 }
 .subproject .mainTopic {
-    background : linear-gradient( to right, transparent, grey calc(50% - 10em), grey calc(50% + 10em), transparent 100% );
-    color: white;
     font-weight: bold;
 }
 .project-icon {
@@ -60,16 +61,28 @@ footer {
 .iconFeaturePlanned {
     background : turquoise;
 }
+.imageCaptioned > h3 {
+    position: absolute;
+    top: 2em;
+    width: 100vw;
+    background-color: rgba(255,255,255,0.7);
+}
 
 /* Index page CSS */
 #home {
-    height: calc(100% - 50px);
+    height: calc(100% - 56px);
     width: 100%;
     position:absolute;
     overflow-x:hidden;
     overflow-y:hidden;
     color: #9d9d9d;
 }
+@media only screen and (min-width: 601px) {
+    #home {
+        height: calc(100% - 64px);
+    }
+}
+
 #background {
     position: absolute;
     margin: 0;
@@ -90,6 +103,11 @@ footer {
 .libyans {
     max-height: 15em;
     max-width: 100%;
+}
+
+/* Helpers */
+.text-justify {
+    text-align: justify;
 }
 /* From bootstrap, but modified */
 .item {

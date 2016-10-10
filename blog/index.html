@@ -21,7 +21,7 @@ title: Blog
 <nav class="pagination">
   <ul class="pagination">
       <li {% if paginator.previous_page == null%} class="disabled" {%endif%}>{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous">{% endif %}
-        <span aria-hidden="true">&laquo; Prev</span>
+        <span aria-hidden="true"><i class="material-icons">chevron_left</i></span>
       {% if paginator.previous_page%}</a>{% endif %}
       </li>
     
@@ -36,7 +36,7 @@ title: Blog
     {% endfor %}
     
     <li {% if paginator.next_page == null%} class="disabled" {%endif%}>{% if paginator.next_page %}<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next">{% endif %}
-        <span aria-hidden="true">Next &raquo;</span>
+        <span aria-hidden="true"><i class="material-icons">chevron_right</i></span>
       {% if paginator.next_page%}</a>{% endif %}
       </li>
     

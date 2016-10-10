@@ -2,12 +2,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Materialize -->
+<link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js" media="screen,projection"></script>
 
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/page.css">
 <title>{% if page.url != '/index.html' %}{{ page.title }} | {% endif %}ThalesVB</title>
 {% if jekyll.environment == "production" %}
 {% include analytics.html %}
 {% endif %}
+
+<script type="text/javascript">
+$( document ).ready(function(){
+  $(".dropdown-button").dropdown();
+  $('.materialboxed').materialbox();
+  $('.carousel.carousel-slider').carousel({
+    full_width: true,
+    indicators: true
+  });
+  $("#sidenav_toggle").sideNav({
+    closeOnClick: true
+  });
+});
+</script>

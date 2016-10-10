@@ -8,7 +8,7 @@ gems: [jekyll-sitemap,
        jekyll-gist]
 
 permalink: "/blog/:year/:month/:day/:title.html"
-paginate: 10
+paginate: 5
 paginate_path: "/blog/page/:num"
 
 img_dir: "/img"
@@ -55,3 +55,6 @@ defaults:
       type: "abouts"
     values:
       layout: "default"
+
+sass:
+  style: compressed

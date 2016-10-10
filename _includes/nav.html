@@ -1,43 +1,71 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-<div class="container-fluid">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_items" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    <a class="navbar-brand" href="{{ site.baseurl }}/">ThalesVB</a>
-  </div>
-  <div class="collapse navbar-collapse" id="navbar_items">
-  <ul class="nav navbar-nav">
-  
-    <li{% if page.url contains '/blog/' %} class="active"{% endif %}><a href="{{ site.url}}/blog/">Blog</a></li>
-    
-    <li class="dropdown{% if page.url contains '/projects/' %} active{% endif %}">
-      <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Projects <span class="caret"></span></a>
-      <ul class="dropdown-menu">
+<ul id="dropdown_projects" class="dropdown-content">
         {% assign projects = site.projects | sort: 'url' %}
         {% for project in projects %}
-        <li{% if page.url == project.url %} class="active"{% endif %}><a href="{{site.url}}{{project.url}}">{{project.title}}</a></li>
+        <li{% if page.url == project.url %} class="active"{% endif %}><a class="waves-effect" href="{{site.url}}{{project.url}}">{{project.title}}</a></li>
         {% endfor %}
-      </ul>
+</ul>
+<ul id="dropdown_abouts" class="dropdown-content">
+        {% assign abouts = site.abouts | sort: 'title' %}
+        {% for about in abouts %}
+        <li{% if page.url == about.url %} class="active"{% endif %}><a class="waves-effect" href="{{site.url}}{{about.url}}">{{about.title}}</a></li>
+        {% endfor %}
+</ul>
+<div class="navbar-fixed">
+<nav>
+<div class="nav-wrapper">
+  <a class="brand-logo center" href="{{ site.baseurl }}/">ThalesVB</a>
+  <a id="sidenav_toggle" href="#" data-activates="side_nav" class="button-collapse"><i class="material-icons">menu</i></a>
+  
+  <ul class="left hide-on-med-and-down">
+    <li{% if page.url contains '/blog/' %} class="active"{% endif %}>
+      <a class="waves-effect" href="{{ site.url}}/blog/">Blog</a>
+    </li>
+    <li class="dropdown{% if page.url contains '/projects/' %} active{% endif %}">
+      <a class="dropdown-button waves-effect" data-activates="dropdown_projects" data-beloworigin="true" data-constrainwidth="false" href="#!">Projects <i class="material-icons right">arrow_drop_down</i></a>
     </li>
     
     <li class="dropdown{% if page.url contains '/about/' %} active{% endif %}">
-      <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About... <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        {% assign abouts = site.abouts | sort: 'title' %}
-        {% for about in abouts %}
-        <li{% if page.url == about.url %} class="active"{% endif %}><a href="{{site.url}}{{about.url}}">{{about.title}}</a></li>
+      <a class="dropdown-button waves-effect" data-activates="dropdown_abouts" data-beloworigin="true" data-constrainwidth="false" href="#!">About... <i class="material-icons right">arrow_drop_down</i></a>
+    </li>
+  </ul>
+
+  <ul class="side-nav" id="side_nav">
+    <li>
+      <div class="userView">
+        <img class="background sideview-background">
+        <img class="circle" src="//avatars.githubusercontent.com/thalesvb">
+        <a><span class="white-text brand-name">ThalesVB</span></a>
+        <a><span class="white-text site">thalesvb.github.io</span></a>
+      </div>
+    </li>
+    <li{% if page.url contains '/blog/' %} class="active"{% endif %}>
+      <a class="waves-effect" href="{{ site.url}}/blog/">Blog</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Projects</a></li>
+    <li>
+      <ul>
+        {% assign projects = site.projects | sort: 'url' %}
+        {% for project in projects %}
+        <li{% if page.url == project.url %} class="active"{% endif %}><a class="waves-effect" href="{{site.url}}{{project.url}}">{{project.title}}</a></li>
         {% endfor %}
       </ul>
     </li>
-    
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">About</a></li>
+    <li>
+      <ul>
+        {% assign abouts = site.abouts | sort: 'title' %}
+        {% for about in abouts %}
+        <li{% if page.url == about.url %} class="active"{% endif %}><a class="waves-effect" href="{{site.url}}{{about.url}}">{{about.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
   </ul>
+
   {% if page.url contains '/blog/' %}
-  <ul class="nav navbar-nav navbar-right">
-    <p class="navbar-text">{{site.data.i18n[page.lang].available_translations}}</p>
+  <ul class="right hide-on-med-and-down">
+    <li>{{site.data.i18n[page.lang].available_translations}}</li>
     {% assign posts=site.posts | where:"universal_name", page.universal_name | sort: 'path' %}
     {% for post in posts %}
     <li class="lang">
@@ -46,6 +74,6 @@
     {% endfor %}
   </ul>
   {% endif %}
-  </div>
 </div>
 </nav>
+</div>
