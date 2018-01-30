@@ -1,12 +1,4 @@
-#unclickable {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 .abap_st22 {
-    font-family: monospace;
     width: 100%;
 }
 .abap_st22 > thead > tr> th {

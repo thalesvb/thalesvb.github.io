@@ -1,0 +1,15 @@
+#unclickable {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: monospace;
+}
