@@ -1,6 +1,2 @@
 #!/bin/sh
-# https://hub.docker.com/r/grahamc/jekyll/
-
-docker run --rm -v "$PWD:/src" -p 4000:4000 grahamc/jekyll $@
-#sudo docker run --rm -v "$PWD:/src" -p 4000:4000 thalesvb/ghpages:latest $@
-
+docker run --rm -v "$PWD":/usr/src/app -p "4000:4000" --entrypoint jekyll starefossen/github-pages serve --drafts --watch --force_polling -H 0.0.0.0 -P 4000 $@
