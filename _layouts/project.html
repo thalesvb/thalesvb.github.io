@@ -28,7 +28,7 @@
                     {% endif %}
                 {% endif %}
                 <div class="col s12 m{{ colspanValue }}">
-                <img class="img-circle project-icon iconFeature" {% if feature.icon %}src="{{site.prefix_cdn}}{{feature.icon}}"{% endif %}></img>
+                <img class="img-circle project-icon iconFeature" {% if feature.icon %}src="{{site.prefix_cdn}}{{feature.icon}}"{% endif %} />
                 <h3>{{feature.name}}</h3>
                 <p>{{feature.description}}</p>
                 </div>
@@ -52,7 +52,7 @@
                     {% endif %}
                 {% endif %}
                 <div class="col s12 m{{ colspanValue }}">
-                <img class="img-circle project-icon iconFeatureTesting" {% if feature.icon %}src="{{site.prefix_cdn}}{{feature.icon}}"{% endif %}></img>
+                <img class="img-circle project-icon iconFeatureTesting" {% if feature.icon %}src="{{site.prefix_cdn}}{{feature.icon}}"{% endif %} />
                 <h3>{{feature.name}}</h3>
                 <p>{{feature.description}}</p>
                 </div>
@@ -76,7 +76,7 @@
                     {% endif %}
                 {% endif %}
                 <div class="col s12 m{{ colspanValue }}">
-                <img class="img-circle project-icon iconFeaturePlanned" {% if feature.icon %}src="{{site.prefix_cdn}}{{feature.icon}}"{% endif %}></img>
+                <img class="img-circle project-icon iconFeaturePlanned" {% if feature.icon %}src="{{site.prefix_cdn}}{{feature.icon}}"{% endif %} />
                 <h3>{{feature.name}}</h3>
                 <p>{{feature.description}}</p>
                 </div>
@@ -94,7 +94,7 @@
                 {% for screenshot in subproject.screenshots %}
                 <div class ="carousel-item imageCaptioned">
                     <img src="{{site.prefix_cdn}}{{page.url}}{{screenshot.image_file}}" class="materialboxed" alt="">
-                    <h3 class="center">{{screenshot.caption}}</p>
+                    <h3 class="center">{{screenshot.caption}}</h3>
                 </div>
                 {% endfor %}
             </div>
