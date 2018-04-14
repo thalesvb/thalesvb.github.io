@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run --rm -v $(pwd)/_site/:/site 18fgsa/html-proofer /site --only-4xx --allow-hash-href --check-html
