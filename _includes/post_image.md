@@ -1,1 +1,1 @@
-![{{include.description}}]({{site.prefix_cdn}}{{site.dir_blog_resources}}{% unless include.generic %}{{page.universal_name}}/{% endunless %}img/{{include.image}} "{{include.description}}"){% include img_responsive.md %}
+![{{include.description}}]({{site.cdn_url}}{{site.dir_blog_resources}}{% unless include.generic %}{{page.universal_name}}/{% endunless %}img/{{include.image}} "{{include.description}}"){% include img_responsive.md %}

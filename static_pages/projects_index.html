@@ -1,0 +1,13 @@
+---
+layout: default
+title: Projects
+permalink: "/projects/"
+---
+
+{% for project in site.projects %}
+<p>
+<a href="{{project.url}}" class="link">{{ project.title }}</a>
+</p>
+{% endfor %}
+
+<script>works_done();</script>

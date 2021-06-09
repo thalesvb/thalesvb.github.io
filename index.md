@@ -1,6 +1,6 @@
 ---
-layout: index_home
-title: ThalesVB's Home
+layout: home
+title: Home
 ---
 
 Congratulations. You just qualified to browse a page with multiverse of contents.

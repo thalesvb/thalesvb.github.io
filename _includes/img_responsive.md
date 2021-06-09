@@ -1,1 +1,1 @@
-{: .responsive-img .img-centered .materialboxed {% if include.caption %}data-caption="{{include.caption}}"{% endif %} }
+{: .responsive .center-align {% if include.caption %}data-caption="{{include.caption}}"{% endif %} }

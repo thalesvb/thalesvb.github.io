@@ -1,60 +1,58 @@
-# https://www.sylvaindurand.org/making-jekyll-multilingual/
+title: ThalesVB
+description: >
+  Attic of random information, personal thoughts, but most of time just a live crash test site for Web Frameworks.
 
 exclude: ['jekyll',
           vendor] # speed up Travis
 
-gems: [jekyll-sitemap,
-       jekyll-paginate,
-       jekyll-gist]
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-remote-theme
+
+baseurl: "/"
+cdn_url: "//github.com/thalesvb/thalesvb.github.io/wiki/"
 
 permalink: "/blog/:year/:month/:day/:title.html"
 paginate: 5
 paginate_path: "/blog/page/:num"
 
 img_dir: "/img"
-prefix_cdn : "//github.com/thalesvb/thalesvb.github.io/wiki"
 dir_blog_resources: "/blog/resources/"
 
 gist:
   noscript: false # don't render noscript fallback tags with gist code
 
+remote_theme: thalesvb/square-root-beer-jekyll@prologue
+
 collections:
-  abouts:
-    output: true
-    permalink: "/about/:name/"
   projects:
+    label_pretty: Projects
+    icon: assignment
     output: true
     permalink: "/:collection/:name/"
 
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
       type: "posts"
     values:
-      layout: "posts"
-  -
-    scope:
-      path: "_posts/en"
-    values:
-      lang: "en"
-  -
-    scope:
-      path: "_posts/pt-BR"
-    values:
-      lang: "pt-br"
-  -
-    scope:
-      path: "_projects"
+      layout: "post"
+  - scope:
       type: "projects"
     values:
-      layout: "project"
-  -
-    scope:
-      path: "_abouts"
-      type: "abouts"
-    values:
-      layout: "default"
+      layout: "antiheroic"
 
 sass:
   style: compressed
+
+root_beer:
+  blog_listing_root: /blog/
+  date_format: "%b %-d, %Y"
+  latest_posts_limit: 3
+  social_links:
+    devto: thalesvb
+    github: thalesvb
+    linkedin: thalesvb
+  analytics:
+    google: UA-75600605-1
