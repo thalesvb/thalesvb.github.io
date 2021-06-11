@@ -10,6 +10,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 baseurl: "/"
 cdn_url: "//github.com/thalesvb/thalesvb.github.io/wiki/"
