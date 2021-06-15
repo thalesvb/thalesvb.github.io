@@ -11,6 +11,7 @@ plugins:
   - jekyll-gist
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 baseurl: "/"
 cdn_url: "//github.com/thalesvb/thalesvb.github.io/wiki/"
@@ -43,6 +44,10 @@ defaults:
       type: "projects"
     values:
       layout: "antiheroic"
+  - scope:
+      path: "posts_bkg/**/*"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
