@@ -1,0 +1,9 @@
+---
+---
+
+@import 'initialize'; // Theme bootstrap
+
+// Quirks to render gist nicely on small screens.
+.gist {
+    max-width: 86vw;
+}
