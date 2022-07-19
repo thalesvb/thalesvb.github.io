@@ -220,6 +220,10 @@ method if_http_extension~handle_request.
   server->response->set_data( content ).
   server->response->set_content_type( content_type ).
 
+  if path eq `/sw.js`.
+    server->response->set_header_field( name = `Service-Worker-Allowed` value = `/` ).
+  endif.
+
 endmethod.
 ```
 
