@@ -62,6 +62,8 @@ root_beer:
     linkedin: thalesvb
   analytics:
     google: UA-75600605-1
+  beercss:
+    theme: "#40E0D0"
 
 webmaster_verifications:
   google: YjSeoUocDzP9hQbZql1oadvwnIcMCimBjo6c7au_MME
