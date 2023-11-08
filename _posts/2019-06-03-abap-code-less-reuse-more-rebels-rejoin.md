@@ -30,21 +30,23 @@ Requirements changes, arises, bugs are found, performance problems are identifie
 
 > _The <del>bomb</del> <ins>code</ins> has been planted!_
 
-Reusability is one path to achieve better maintainability, because the reusable part is extensively test edin a multitude of scenarios, and when you fix or improve this reusable part, you are fixing /improving the same situation in all others scenarios that use it. Not only that, you write new code faster, because this reusable part is assumed to be working as expected, you just need to test and validate your new lines.
+Reusability is one path to achieve better maintainability, because the reusable part is extensively tested in a multitude of scenarios, and when you fix or improve this reusable part you are also fixing and improving all others scenarios that are using it. Not only that, you implement new features faster, because this reusable part is assumed to be working as expected, you just need to test and validate your code that glues it.
 
 Code duplication, for example, is something everyone wants to avoid, and one good example of how things can be done better when you have reusability in mind. You, as a developer, don't want to rewrite everything every time. On the same thread you have decoupling, a piece of code that does only one specific task. Something decoupled can be easily reused.
 
-Let's take a car, for example, to visualize these concepts (or recap them):
+Let's use a car as an example to visualize these concepts (or recap them):
 
 * A manufacturer reuse the same engine, transmission, chassis, and almost every piece in a multitude of vehicles, with some adjustments (classes/function modules and its parameters).
-* Those pieces are decoupled and are built to execute a specific task: engine turns fuel into mechanical energy, transmission adapts the output of the engine to the drive wheels, chassis is a solid support for every major part of a car, and hold everything together.
-* If something breaks or wears out, you can simple change it. You don't buy a new car when the tires are worn out.
-* With fuel evolution, first adapted cars replaced only engine/drive train (rewrite to work in HANA / integrate with external software) and kept all others components, because they still works fine for now. There is room for improvements, body were designed for keep fossil fuel engine cool and this is not required in electric engine, so a new body with lower drag coefficient can be designed (take HANA / external software capabilities to build features unthinkable in old scenario).
+* Those pieces are decoupled and are built to execute a specific task: engine turns fuel into mechanical energy, transmission adapts the output of the engine to the drive shaft, differential transfers torque drive shaft received from transmission to wheels, wheels that convert rotary to linear movement, not to forget the solid foundation for all components: chassis supporting it all.
+* If something breaks or wears out, you can change it. You don't buy a new car when the tires are worn out.
+* With fuel evolution, first adapted cars replaced only engine/drive train (rewrite to work in HANA / integrate with external software) and kept all others components, because they still works fine for now. There is room for improvements, car bodies were designed for keep fossil fuel powered-engines cool and this is not required in electric engine, so a new body with lower drag coefficient can be designed (take HANA / external software capabilities to build features unthinkable in old scenario).
 * The driver (end-user) still know how to drive the car, even if every internal component is changed, because the throttle, brake pedal, wheel is the same (user interface). Fancy features like radio controls can be added (Fiori, Flutter, Angular, Xamarin, any other UI technology, there are plenty), and only minor changes are required in the car internal components (OData/REST/Cloud Connector/API Management).
 
-Because manufacturers don't reinvent the wheel every time they need to build a new car model, they save money, and less expenses turns into a bigger profit margins.
+Because manufacturers don't reinvent the wheel every time they need to design and build a new car model, they save money, and less expenses turns into a bigger profit margins.
 
 {% include post_image.md image="aha.jpg" description="A smart ostrich from a famous comedy cartoon laughing about this lame but yet precise IT joke" %}
+
+Your currency as Developer is time: estimating, finishing things without overdue. If you can write less code to implement features you have a better control of your time: less time coding, less time testing, more time enjoying your day: creating amazing stuff.
 
 ## The empire is ruling over us
 

@@ -12,7 +12,7 @@ tags: fiori sap
 [Fiori Client removal from app stores][sapnote_fiori_client_removal] was a buzz few months ago, big enough to make SAP rethink about its phasing out plan: postpone removal date, change distribution channel from (manual) ONE Support Downloads into a Managed distribution through stores (some business steps involved, but easier easier for common employees install on device).
 
 Wouldn't be nice if they embraced Progressive Web App philosophy into Launchpad roots? They sell as Fiori apps, why not take it seriously as an app platform?
-
+   
 While you and me daydream about it, let's toy around what we have today.
 
 ## Disclaimers
@@ -239,7 +239,7 @@ This is enough. Just load Web Manifest and Service Worker files into MIME and it
 
 ## The aftermath
 
-ou could also take both experience and knowledge to a next level, like fiorize installation experience through a Launchpad Plugin. You can toy with other things to improve PWA experience, but you'll always have to think twice if that requires something that relies on ABAP side: "Am I jeopardizing myself doing that?" "Is that code released for customers?" "Is there a public API for that?" You'll have to develop, mend, maintain, check on every support package upgrade.
+You can take both experience and knowledge to a next level, like fiorize installation experience through a Launchpad Plugin. You can toy with other things to improve PWA experience, but you'll always have to think twice if that requires something that relies on ABAP side: "Am I jeopardizing myself doing that?" "Is that code released for customers?" "Is there a public API for that?" You'll have to develop, mend, maintain, check on every support package upgrade.
 
 Want the better experience? Be picky and make your company expenses worth by [influencing the software][sap_customer_influence], or meet us on some shady corner [mumbling about immutable decisions took inside][sap_never_implementing_basic_features].
 

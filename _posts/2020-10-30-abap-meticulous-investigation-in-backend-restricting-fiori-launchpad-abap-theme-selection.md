@@ -54,7 +54,7 @@ I could happily finish here but I won't. Let's do this enhancement wise, a plugg
 
 You can download/install from git repo [thalesvb/flponprem-themerestriction][repo_theme_restriction] and all you need to do is implement a BAdI with your rules, the same way you do for standard code. Whenever SAP changes (or relocates) that code, git repo will (probably) be updated. You fetch that update for your system, and that's it. No need to manually readapt code on your end.
 
-This is not bulletproof, it is still possible to set any theme with URL parameters because that happens on Fiori Launchpad Javascript, before any call to backend. There is margin to disable this behavior, but that's an excellent start for one horror story and I will not help you with it.
+This is not bulletproof, it is still possible to set any theme with URL parameters because that happens on Fiori Launchpad JavaScript, before any call to backend. There is margin to disable this behavior, but that's an excellent start for one horror story and I will not help you with it.
 
 Now if you'll just look right here…
 

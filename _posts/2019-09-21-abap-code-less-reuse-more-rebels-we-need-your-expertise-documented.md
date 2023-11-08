@@ -40,7 +40,7 @@ endmethod.
 
 {% include post_image.md image="cnick.jpg" description="???" %}
 
-ABAP Language ensures that a variable always starts its lifecycle with initial value, so it doesn't make sense to clear it right after declaring it. Also why clear it before exiting method? That doesn't make sense at all in this context, but unfortunately it's not very uncommon to see both cases.
+ABAP Language ensures that a variable always starts its life cycle with initial value, so it doesn't make sense to clear it right after declaring it. Also why clear it before exiting method? That doesn't make sense at all in this context, but unfortunately it's not very uncommon to see both cases.
 This could make some sense with global variables and/or class attributes, but this show that bad refactoring, lazy cut/paste make or even lack of knowledge turns codes uglier.
 
 Languages changes, evolves and adapts, so do programming languages. Tables with header lines could make sense a long time ago when technology allowed only 72 characters per line and it wasn't possible to span a single statement across multiple lines, but nowadays this (obsolete for a few decades) feature create more headaches than solve problems. We don't write Old neither Middle English nowadays, your code shouldn't be using obsolete elements either.
@@ -57,7 +57,7 @@ No, we're not going off-topic, because…
 
 Let's face the truth: your first action to understand what a piece of code does is read it. This by itself is a good reason to write it properly, and you can learn more about it by by [reading the official style guide][abap_style_guide]. What it proposes is what non-ABAPers already do in their codes (since a long time ago), now we have _la pièce de résistance officiele et publique_ to finally write readable code in peace.
 
-We are already limited by 30 characters, throwing hungarian notation away frees up 3 of them (if you still don't know how to quickly discover how a variable was declared, time to study again your code editor). Using the name of tables, structures or even data element into naming is also a problem, it doesn't add anything useful to it.
+We are already limited by 30 characters, throwing Hungarian notation away frees up 3 of them (if you still don't know how to quickly discover how a variable was declared, time to study again your code editor). Using the name of tables, structures or even data element into naming is also a problem, it doesn't add anything useful to it.
 
 Evidence 2:
 
@@ -79,9 +79,9 @@ Code quality also diverges to another topic in reusability: you found something 
 > _Write it, cut it, paste it save it._  
 > _Load it, check it… Quick, rewrite it._
 
-A thing that haunt us every other month when doing some maintenance on legacy reports: a piece of code that does a selection, fill a structure, build field catalog, then queries another table, pull forecast info from internet, and do rome random calculation about it… all that stuff occupies about 300 lines of code inside a double-nested loop from a form named SELECTION; the program itself have just another form called DISPLAY, and that's it about encapsulation (all variables are global, by the way).
+A thing that haunt us every other month when doing some maintenance on legacy reports: a piece of code that does a selection, fill a structure, build field catalog, then queries another table, pull forecast info from internet, and do some random calculation about it… all that stuff occupies about 300 lines of code inside a double-nested loop from a form named SELECTION; the program itself have just another form called DISPLAY, and that's it about encapsulation (all variables are global, by the way).
 
-This is the worst case scenario, but even on new come somethimes you go by emotion (because you know, doing magic is addictive) and write big chunks of code. Refactoring them into smaller units makes easy do digest, and you can even give "functional" methods names to make code readable at high level, even [eliminating unneeded comments][coding_without_comments].
+This is the worst case scenario, but even on new come sometimes you go by emotion (because you know, doing magic is addictive) and write big chunks of code. Refactoring them into smaller units makes easy do digest, and you can even give "functional" methods names to make code readable at high level, even [eliminating unneeded comments][coding_without_comments].
 
 The process of refactoring also have a byproduct: eventually you will see that a class was doing two different things and you decide to split it in two classes. These two smaller classes now executes a specific thing, and specific things are way easier to reuse than cluttered things.
 
