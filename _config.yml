@@ -56,6 +56,8 @@ root_beer:
   blog_listing_root: /blog/
   date_format: "%b %-d, %Y"
   latest_posts_limit: 3
+  search:
+    page: /search/
   social_links:
     devto: thalesvb
     github: thalesvb
